@@ -1,18 +1,31 @@
-OmniApp::Application.routes.draw do
+Mez2::Application.routes.draw do
 
+<<<<<<< 5c29aa7a8b034ad4d3b582eeb62430368f735bda
   get "users/new"
   #get "home/index"
+=======
+  resources :users
+=begin
+>>>>>>> user login through facebook, then forwarded to temporary "surver" page, asked questions, then forwarded back to home page, user data and "survey answers" stored in database
 
-  #get "home/profile"
+  get "users/index"
+  get "users/new"
+  get "users/create"
+  get "users/edit"
+  get "users/update"
+  get "users/destroy"
+  get "users/show"
+=end
 
-  root 'home#index'
+  root 'users#index'
 
-  get 'home/profile'
+  get '/all', :to => 'users#index', :as => 'all'
 
-  get 'auth/:provider/callback', to: "sessions#create"
+  get 'auth/:provider/callback', to: "users#new"
 
-  delete 'sign_out', to: "sessions#destroy", as: 'sign_out'
+  #delete 'sign_out', to: "users#end_session", as: 'sign_out'
 
+  delete '/sign_out', :to => 'users#end_session'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
