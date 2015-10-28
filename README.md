@@ -14,7 +14,6 @@
 - Mason Levy - Software Developer
 - Prithvi Sathiya - Software Developer
 
-<<<<<<< 5c29aa7a8b034ad4d3b582eeb62430368f735bda
 #### Currently on: Sprint 2
 
 # To-Do:
@@ -29,5 +28,3 @@ If you want to run the server on *Cloud 9*, you will have to start the PostGRESQ
 ``` sudo service postgresql start ```
 
 ``` rails s -b $IP -p $PORT ```
-=======
->>>>>>> user login through facebook, then forwarded to temporary "surver" page, asked questions, then forwarded back to home page, user data and "survey answers" stored in database
