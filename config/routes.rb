@@ -10,6 +10,8 @@ OmniApp::Application.routes.draw do
   #root 'home#profile'
 
   get 'home/profile'
+  
+  get 'home/index'
 
   get 'auth/:provider/callback', to: "sessions#create"
 
