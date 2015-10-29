@@ -10,6 +10,15 @@ OmniApp::Application.routes.draw do
   get 'home/profile'
 
   get 'auth/:provider/callback', to: "sessions#create"
+  
+  #profile page routes
+  
+  get 'video/show' => 'video#show'
+  get 'audio/show' 
+  get 'other/show' => 'other#show'
+  get 'audio/showsongs' => 'audio#showsongs'
+  get 'audio/showsinglevid'
+  get 'audio/newurl'
 
   delete 'sign_out', to: "sessions#destroy", as: 'sign_out'
 
