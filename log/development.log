@@ -7599,3 +7599,49 @@ Started GET "/assets/application.self.js?body=1" for 169.231.71.12 at 2015-10-29
 
 
 Started GET "/assets/mezzo_transparent2.png" for 169.231.71.12 at 2015-10-29 08:10:53 +0000
+
+
+Started GET "/" for 169.231.71.12 at 2015-10-29 08:23:33 +0000
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 169.231.71.12 at 2015-10-29 08:23:33 +0000
+
+
+Started GET "/assets/home.self.css?body=1" for 169.231.71.12 at 2015-10-29 08:23:33 +0000
+
+
+Started GET "/assets/users.self.css?body=1" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
+
+
+Started GET "/assets/sessions.self.css?body=1" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
+
+
+Started GET "/assets/home.self.js?body=1" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
+
+
+Started GET "/assets/sessions.self.js?body=1" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
+
+
+Started GET "/assets/users.self.js?body=1" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
+
+
+Started GET "/assets/facebook.png" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
+
+
+Started GET "/assets/mezzo_transparent2.png" for 169.231.71.12 at 2015-10-29 08:23:34 +0000
