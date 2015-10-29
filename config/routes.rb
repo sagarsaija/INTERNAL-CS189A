@@ -7,6 +7,7 @@ OmniApp::Application.routes.draw do
 
   #root 'home#index'
   root 'home#home'
+  #root 'home#profile'
 
   get 'home/profile'
 
