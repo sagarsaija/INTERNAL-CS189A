@@ -1,48 +1,45 @@
 Tabulous.setup do
 
   tabs do
-    profile_tab do 
-      text {'Profile'}
-      link_path {'/profile/showVid'}
+
+    profile_tab do
+      text          { 'Profile' }
+      link_path     { '/profile/showVid' }
       visible_when  { true }
       enabled_when  { true }
-      #active_when   { a_subtab_is_active }
-      active_when   { in_action('any').of_controller('audio') }
+      active_when   { a_subtab_is_active }
+      #active_when   { in_action('any').of_controller('profile') }
     end
-    # songs_subtab do
-    #   text          { 'Videos' }
-    #   link_path     { '/audio/show' }
-    #   visible_when  { true }
-    #   enabled_when  { true }
-    #   active_when   { in_actions('show', 'showsinglevid', 'newurl').of_controller('audio') }
-    # end
     
-    # vidsongs_subtab do
-    #   text          { 'Songs' }
-    #   link_path     { '/audio/showsongs' }
-    #   visible_when  { true }
-    #   enabled_when  { true }
-    #   active_when   { in_action('showsongs').of_controller('audio') }
-    # end
+    video_subtab do
+      text          { 'Videos' }
+      link_path     { '/profile/showVid' }
+      visible_when  { true }
+      enabled_when  { true }
+      active_when   { in_actions('showVid' , 'showSingleVid', 'addVid').of_controller('profile') }
+    end
+    
+    audio_subtab do
+      text {'Audio'}
+      link_path {'/profile/showAud'}
+      visible_when {true}
+      enabled_when {true}
+      active_when {in_action('showAud').of_controller('profile')}
+    end
+    
+    messages_tab do
+      text          { 'Messages' }
+      link_path     { '/profile/showAllMessage' }
+      visible_when  { true }
+      enabled_when  { true }
+      active_when   { in_action('showAllMessage').of_controller('profile') }
+    end
     
     
-    # video_tab do
-    #   text {'Video'}
-    #   link_path {'/video/show'}
-    #   visible_when  { true }
-    #   enabled_when  { true }
-    #   active_when   { in_action('any').of_controller('video') }
-    # end
-    
-    # other_tab do
-    #   text {'Other'}
-    #   link_path {'/other/show'}
-    #   visible_when {true}
-    #   enabled_when {true}
-    #   active_when   { in_action('any').of_controller('other') } 
-    # end
-    
+
   end
+  
+  
 
   customize do
 
@@ -50,10 +47,10 @@ Tabulous.setup do
     # :default, :html5, :bootstrap, :bootstrap_pill or :bootstrap_navbar
     # or create your own renderer class and reference it here
     # renderer :default
-
+    renderer :bootstrap
     # whether to allow the active tab to be clicked
     # defaults to true
-    active_tab_clickable false
+    # active_tab_clickable true
 
     # what to do when there is no active tab for the current controller action
     # :render -- draw the tabset, even though no tab is active

@@ -10,6 +10,9 @@ OmniApp::Application.routes.draw do
   get "profile/showVid"
   get "profile/showAud"
   get "profile/showSingleVid"
+  get "profile/showAllMessage"
+  get "profile/addVid"
+  post "profile/create"
   #end profile page stuff--->
 
   root 'home#index'

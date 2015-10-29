@@ -12,6 +12,15 @@
     padding: 20px;
 }
 
+.second {
+    height: 200px;
+    width: 100%;
+    //border-top: 2px solid #AC1D59;
+    background-color: #E6F0E6;
+    //background-image: url('http://stockfresh.com/files/l/lem/m/45/537594_stock-photo-abstract-musical-background-guitar.jpg');
+    padding: 20px;
+}
+
 #pic {
     
     display: inline-block;
@@ -46,5 +55,5 @@
 
 .thumbnailimage {
     width: 30%;
-    margin: 0 auto;
+    margin: 5px auto;
 }

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Profile Video</title>
+  <title>Single Video</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-  
  
   <%= tabs %>
   <br>
@@ -17,25 +16,29 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt turpis enim, id imperdiet augue dictum ut. Etiam faucibus gravida commodo. Integer vehicula purus ac lacinia vestibulum. Quisque bibendum, augue nec ullamcorper elementum, nibh dui scelerisque urna, et posuere tellus nisl sit amet ex. Aenean at lorem volutpat libero blandit porta sit amet sed lorem. Mauris porttitor, mi eu fringilla porttitor, urna est facilisis est, id luctus dolor mi at mauris. Sed metus orci, consequat vitae massa commodo, consequat pulvinar ju
     </div>
   </div>
-  <h3>All Videos</h3>
+  
+  
+  
+  
   <hr>
   <hr>
   
+  <%= form_for :video_Url do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :url %><br>
+    <%= f.text_area :url %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Save Video"%>
+  </p>
+  <% end %>
   
-  
-  <a href="/profile/addVid"><button>ADD</button></a>
-  <div class = "Videolist">
-    <a href="/profile/showSingleVid">
-      <img class="thumbnailimage" src="http://img.youtube.com/vi/Ewr86bQB8Lc/mqdefault.jpg">
-    </a>
-    <img class="thumbnailimage" src="http://img.youtube.com/vi/xlDLd8MBkeE/mqdefault.jpg">
-    <img class="thumbnailimage" src="http://img.youtube.com/vi/nOHEuhJf7nA/mqdefault.jpg">
-    <img class="thumbnailimage" src="http://img.youtube.com/vi/3yDP9MKVhZc/mqdefault.jpg">
-    <img class="thumbnailimage" src="http://img.youtube.com/vi/Ewr86bQB8Lc/mqdefault.jpg">
-    <img class="thumbnailimage" src="http://img.youtube.com/vi/xlDLd8MBkeE/mqdefault.jpg">
-    <img class="thumbnailimage" src="http://img.youtube.com/vi/nOHEuhJf7nA/mqdefault.jpg">
-    <img class="thumbnailimage" src="http://img.youtube.com/vi/3yDP9MKVhZc/mqdefault.jpg">
-  </div>
   <%= yield %>
  
 </body>
