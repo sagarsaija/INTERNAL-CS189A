@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 20151014002831) do
   enable_extension "plpgsql"
 
   create_table "users", force: :cascade do |t|
-    t.string   "provider",   limit: 255
-    t.string   "uid",        limit: 255
-    t.string   "name",       limit: 255
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
