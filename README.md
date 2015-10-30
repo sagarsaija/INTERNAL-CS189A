@@ -15,8 +15,10 @@
 - Mason Levy - Software Developer
 - Prithvi Sathiya - Software Developer
 
+## Currently on: Pre-sprint 3
+**Goal:** Develop UI, profile, and matching features
 
-#To-do: [PivotalTracker](https://www.pivotaltracker.com/n/projects/1440674)
+###To-do: [PivotalTracker](https://www.pivotaltracker.com/n/projects/1440674)
 * Link profiles to users (5)
 * Store user location in database (1)
 * Create matching page (5)
@@ -24,8 +26,7 @@
 * Chat messaging system research (C)
 
 
-#### Currently on: Pre-sprint 3
-* Develop UI, profile, and matching features
+
 
 ##### Note:
 If you want to run the server on *Cloud 9*, you will have to start the PostGRESQL service before you run:
