@@ -1,6 +1,9 @@
 class HomeController < ApplicationController
   before_action :set_auth
 
+  def home
+  end
+
   def index
     @users = User.all
   end

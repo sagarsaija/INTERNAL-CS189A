@@ -5,9 +5,13 @@ OmniApp::Application.routes.draw do
 
   #get "home/profile"
 
-  root 'home#index'
+  #root 'home#index'
+  root 'home#home'
+  #root 'home#profile'
 
   get 'home/profile'
+  
+  get 'home/index'
 
   get 'auth/:provider/callback', to: "sessions#create"
 

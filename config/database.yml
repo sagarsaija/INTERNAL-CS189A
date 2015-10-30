@@ -2,6 +2,7 @@
 development:
   adapter: postgresql
   database: mezzo_development
+  username: postgres
   pool: 5
   timeout: 5000
   encoding: utf8
@@ -9,6 +10,7 @@ development:
 test:
   adapter: postgresql
   database: mezzo_test
+  username: postgres
   pool: 5
   timeout: 5000
   encoding: utf8
@@ -16,6 +18,7 @@ test:
 production:
   adapter: postgresql
   database: mezzo_production
+  username: postgres
   pool: 5
   timeout: 5000
   encoding: utf8

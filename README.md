@@ -1,5 +1,4 @@
-# Mezzo [![Build Status](https://magnum.travis-ci.com/Styxx/INTERNAL-CS189A.svg?token=pQvxcmrbHMs3QsSaUN6U&branch=master)](https://magnum.travis-ci.com/Styxx/INTERNAL-CS189A)
-## Finding a _medium_ for musicians to collaborate
+# Mezzo [![Build Status](https://magnum.travis-ci.com/sagarsaija/INTERNAL-CS189A.svg?token=pQvxcmrbHMs3QsSaUN6U&branch=master)](https://magnum.travis-ci.com/sagarsaija/INTERNAL-CS189A)
 ##### CS 189A - Senior Capstone Project
 ###### Instructor: Chandra Krintz (ckrintz@cs.ucsb.edu)
 ###### TA: Daniel Imberman (dimberman@umail.ucsb.edu)
