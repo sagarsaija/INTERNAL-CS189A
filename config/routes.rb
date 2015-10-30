@@ -1,11 +1,14 @@
 OmniApp::Application.routes.draw do
 
-  
-  get "users/new"
-  #get "home/index"
+  get "users/new"             # Currently empty; exists only to pass users/new test
 
-  #get "home/profile"
+  root               'home#home'
+  get     'about' => 'home#about'
+  get     'users' => 'home#index'
+
   
+  get 'home/profile'          # Currently empty; exists only to pass home/profile test
+                              # change to users/profile?
   #<-for profile page stuff
   get "profile/showVid"
   get "profile/showAud"
@@ -15,13 +18,6 @@ OmniApp::Application.routes.draw do
   post "profile/create"
   #end profile page stuff--->
 
-  #root 'home#index'
-  root 'home#home'
-  #root 'home#profile'
-
-  get 'home/profile'
-  
-  get 'home/index'
 
   get 'auth/:provider/callback', to: "sessions#create"
 
