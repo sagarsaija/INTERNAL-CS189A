@@ -29,11 +29,3 @@
 1. We will **go to every scrum and class** (barring sickness).
 2. We will **stay updated** with PivotalTracker and log work times.
 3. We will **be more open** with our blocks or our problems.
-
-
-##### Note:
-If you want to run the server on *Cloud 9*, you will have to start the PostGRESQL service before you run:
-
-``` sudo service postgresql start ```
-
-``` rails s -b $IP -p $PORT ```
