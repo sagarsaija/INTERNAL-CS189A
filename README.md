@@ -25,7 +25,10 @@
 * Public-like system (2)
 * Chat messaging system research (C)
 
-
+##### 3 Things We're Focusing on This Sprint:
+1. We will **go to every scrum and class** (barring sickness).
+2. We will **stay updated** with PivotalTracker and log work times.
+3. We will **be more open** with our blocks or our problems.
 
 
 ##### Note:
