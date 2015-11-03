@@ -4,9 +4,6 @@ source 'https://rubygems.org'
 #gem 'rails', '4.0.0.rc2'
 gem 'rails','4.2.2'
 
-# Use PostGRES as the database for Active Record
-gem 'pg'
-
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 4.0.0.rc2'
 # gem 'sass-rails', '~> 4.0.0'
@@ -56,3 +53,14 @@ end
 gem 'omniauth-facebook'
 
 gem 'bootstrap-sass', '~> 3.3.5'
+
+
+group :development do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+end
+
+
+group :production do
+  gem 'pg'
+end
