@@ -6,7 +6,7 @@ function findUser(){
                 zoom: 16};
             console.log("got location");
             $.ajax({
-                url: "graph/save_user_location",
+                url: "location/save_user_location",
                 type: "POST",
                 data: {lat: position.coords.latitude, lng: position.coords.longitude}
             });
@@ -25,17 +25,17 @@ function getViewerLocation(lat, lng){
 }
 function getMarkers(lat, lng){
     return $.ajax({
-        url: "graph/load_local_deals",
+        url: "locations/load_local_mezzians",
         type: "GET",
         data: {lat: lat, lng: lng},
         dataType: 'json'
     });
 }
-function updateCount(deal_id, count_type){
+function updateCount(instrument_id, count_type){
     $.ajax({
-        url: "deals/update_" + count_type + "_count",
+        url: "instruments/update_" + count_type + "_count",
         type: "PATCH",
-        data: {deal_id: deal_id},
+        data: {instrument_id: instrument_id},
         dataType: 'json'
     });
 }
@@ -47,8 +47,8 @@ function initMap(mapOptions) {
             result.map(function(m){
                 marker = handler.addMarker(m);
                 google.maps.event.addListener(marker.getServiceObject(), 'click', function(){
-                    var deal_id = m.infowindow.split("deal_id: ").pop().split('<')[0];
-                    updateCount(deal_id, 'view');
+                    var instrument_id = m.infowindow.split("instrument_id: ").pop().split('<')[0];
+                    updateCount(instrument_id, 'view');
                 });
             });
         });
@@ -57,8 +57,8 @@ function initMap(mapOptions) {
                 result.map(function(m){
                     marker = handler.addMarker(m);
                     google.maps.event.addListener(marker.getServiceObject(), 'click', function(){
-                        var deal_id = m.infowindow.split("deal_id: ").pop().split('<')[0];
-                        updateCount(deal_id, 'view');
+                        var instrument_id = m.infowindow.split("instrument_id: ").pop().split('<')[0];
+                        updateCount(instrument_id, 'view');
                     });
                 });
             });
