@@ -15,15 +15,14 @@
 - Mason Levy - Software Developer
 - Prithvi Sathiya - Software Developer
 
-## Currently on: Pre-sprint 3
+## Currently on: Sprint 3
 **Goal:** Develop UI, profile, and matching features
 
 ###To-do: [PivotalTracker](https://www.pivotaltracker.com/n/projects/1440674)
 * Link profiles to users (5)
 * Store user location in database (1)
 * Create matching page (5)
-* Public-like system (2)
-* Chat messaging system research (C)
+* ~~Chat messaging system research (C)~~
 
 ##### 3 Things We're Focusing on This Sprint:
 1. We will **go to every scrum and class** (barring sickness).
