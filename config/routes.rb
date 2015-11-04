@@ -1,8 +1,10 @@
 OmniApp::Application.routes.draw do
 
+  resources :locations
   get "users/new"             # Currently empty; exists only to pass users/new test
 
   root               'home#home'
+  #root "locations#show"
   get     'about'   => 'home#about'
   get     'users'   => 'home#index'
   get     'profile' => 'profile#showVid'
@@ -15,6 +17,7 @@ OmniApp::Application.routes.draw do
   get "profile/showAud"
   get "profile/showSingleVid"
   get "profile/showAllMessage"
+  get "profile/showlocation"
   get "profile/addVid"
   post "profile/create"
   #end profile page stuff--->

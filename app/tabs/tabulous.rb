@@ -35,7 +35,13 @@ Tabulous.setup do
       active_when   { in_action('showAllMessage').of_controller('profile') }
     end
     
-    
+    location_tab do
+      text          { 'location' }
+      link_path     { '/profile/showlocation' }
+      visible_when  { true }
+      enabled_when  { true }
+      active_when   { in_action('showlocation').of_controller('profile') }
+    end
 
   end
   

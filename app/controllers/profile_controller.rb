@@ -19,5 +19,8 @@ class ProfileController < ApplicationController
     
   end
   
+  def showlocation
+    
+  end
   
 end
