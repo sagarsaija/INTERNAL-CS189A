@@ -10,6 +10,10 @@ class HomeController < ApplicationController
 
   def profile
   end
+  
+  def matching
+  end
+
 
   private
 

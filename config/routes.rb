@@ -3,9 +3,10 @@ OmniApp::Application.routes.draw do
   get "users/new"             # Currently empty; exists only to pass users/new test
 
   root               'home#home'
-  get     'about'   => 'home#about'
-  get     'users'   => 'home#index'
-  get     'profile' => 'profile#showVid'
+  get     'about'    => 'home#about'
+  get     'users'    => 'home#index'
+  get     'profile'  => 'profile#showVid'
+  get     'matching' => 'home#matching'
 
   
   get 'home/profile'          # Currently empty; exists only to pass home/profile test
