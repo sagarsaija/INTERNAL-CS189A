@@ -6,7 +6,7 @@ OmniApp::Application.routes.draw do
   get     'about'    => 'home#about'
   get     'users'    => 'home#index'
   get     'profile'  => 'profile#showVid'
-  get     'matching' => 'home#matching'
+  get     'matching' => 'users#matching'
 
   
   get 'home/profile'          # Currently empty; exists only to pass home/profile test
