@@ -28,3 +28,8 @@
 1. We will **go to every scrum and class** (barring sickness).
 2. We will **stay updated** with PivotalTracker and log work times.
 3. We will **be more open** with our blocks or our problems.
+
+## Important links for chat
+* https://developer.layer.com/docs/platform
+* http://blog.layer.com/introducing-layer-platform-api/
+* https://github.com/sbissessur/layer-ruby

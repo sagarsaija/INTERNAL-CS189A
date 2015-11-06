@@ -54,6 +54,7 @@ gem 'omniauth-facebook'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
+# messaging gem
 gem 'layer-ruby', require: 'layer'
 
 
