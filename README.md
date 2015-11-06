@@ -23,6 +23,8 @@
 * Store user location in database (1)
 * Create matching page (5)
 * ~~Chat messaging system research (C)~~
+* User Stories (C)
+* UX/UI Feedback (C)
 
 ##### 3 Things We're Focusing on This Sprint:
 1. We will **go to every scrum and class** (barring sickness).
