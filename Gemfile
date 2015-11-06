@@ -54,6 +54,8 @@ gem 'omniauth-facebook'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
+gem 'layer-ruby', require: 'layer'
+
 
 group :development do
   # Use sqlite3 as the database for Active Record
