@@ -3,6 +3,7 @@ class ProfileController < ApplicationController
   end
 
   def showAud
+
   end
 
   def showSingleVid
