@@ -1,26 +1,97 @@
+<form class="form-horizontal">
+<fieldset>
+
+<div class="legendary">
+  <legend>BASIC INFORMATION</legend>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Instrument:</label>
+  <div class="col-md-4">
+    <div class="checkbox">
+    <label><input type="checkbox" value="">Rockband 1</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" value="">Rockband 2</label>
+  </div>
+  <div class="checkbox disabled">
+    <label><input type="checkbox" value="" disabled>Rockband 3</label>
+  </div>
+  <div class="checkbox disabled">
+    <label><input type="checkbox" value="" disabled>Rockband 4</label>
+  </div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Experience">Experience:</label>
+  <div class="col-md-4">
+    <div class="radio">
+    <label><input type="radio" name="optradio">1</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="optradio">2</label>
+  </div>
+  <div class="radio disabled">
+    <label><input type="radio" name="optradio" disabled>3</label>
+  </div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="genre">Genre:</label>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label class="checkbox-inline"><input type="checkbox" value="">Rock</label>
+      <label class="checkbox-inline"><input type="checkbox" value="">Rap</label>
+      <label class="checkbox-inline"><input type="checkbox" value="">EDM</label>
+      <label class="checkbox-inline"><input type="checkbox" value="">Country</label>
+    </select>
+  </div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="influence">Influence:</label>
+  <div class="col-md-4">
+  <input id="influence" name="influence" placeholder="The Kooks, Mastodon, RHCP, etc." class="form-control input-md" type="text">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="url">URL:</label>
+  <div class="col-md-4">
+  <input id="url" name="url" placeholder="What's your favorite URL?" class="form-control input-md" type="text">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="provider">Provider:</label>
+  <div class="col-md-4">
+  <input id="provider" name="provider" placeholder="What's your phone provider?" class="form-control input-md" type="text">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bio">Bio:</label>
+  <div class="col-md-4">
+  <input id="bio" name="bio" placeholder="Gimme a lil bio fam" class="form-control input-md" type="text">
+
+  </div>
+</div>
+
 <%= form_tag({controller: "users", action: "updateSurvey"}, method: "post") do %>
-    <%= label_tag(:instrument, "Instrument:") %>
-    <%= text_field_tag(:instrument) %>
-
-    <%= label_tag(:exp, "Experience:") %>
-    <%= text_field_tag(:exp) %>
-
-    <%= label_tag(:genre, "Genre:") %>
-    <%= text_field_tag(:genre) %>
-
-    <%= label_tag(:influence, "Influence:") %>
-    <%= text_field_tag(:influence) %>
-
-    <%= label_tag(:url, "Url:") %>
-    <%= text_field_tag(:url) %>
-
-    <%= label_tag(:provider, "Provider:") %>
-    <%= text_field_tag(:provider) %>
-
-    <%= label_tag(:bio, "Bio:") %>
-    <%= text_area_tag(:bio) %>
-
-    <%= submit_tag("Submit") %>
+  <%= submit_tag("Submit") %>
 <% end %>
 
 
